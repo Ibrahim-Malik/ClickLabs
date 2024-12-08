@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Account</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <div class="bg-primary text-white text-center py-5">
+        <div class="container">
+            <h1>My Account</h1>
+            <p>Hello Name!</p>
+            <img src="images/p1.png" alt="User Profile" class="rounded-circle">
+        </div>
+    </div>
+
+    <!-- Tabs Section -->
+    <div class="container my-4">
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link active aa" href="#profile" data-bs-toggle="tab">Profile Update</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link aa" href="#password" data-bs-toggle="tab">Change password</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link aa" href="#address" data-bs-toggle="tab">Delivery Address</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link aa" href="#payment-details" data-bs-toggle="tab">Payment Details</a>
+            </li>
+            <li class="nav-item lg">
+                <a class="nav-link aa" onclick="showAlert()">Logout</a>
+            </li>
+        </ul>
+        <div id="customAlert" class="alert-bx">
+            <div class="alert-ct">
+                <p>Are you sure you want to log out?</p>
+                <button class="no ttt" onclick="closeAlert()">No</button>
+                <button class="yes ttt" onclick="logout()">Yes</button>
+            </div>
+        </div>
+
+        <!-- Tab Content -->
+        <div class="tab-content mt-5">
+            <div class="tab-pane fade show active" id="profile">
+                <div class="row col-lg-6 col-md-6">
+                    <div class="col">
+                        <label for="name">First Name</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col">
+                        <label for="name">Last Name</label>
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+                <div class="row col-lg-6 col-md-6 mt-4">
+                    <div class="col">
+                        <label for="phone">Phone Number</label>
+                        <input type="phone" class="form-control">
+                    </div>
+                    <div class="col">
+                        <label for="address">Address</label>
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+                <div class="row col-lg-6 col-md-6 mt-4">
+                    <div class="col">
+                        <label for="pincode">Pincode</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col">
+                        <label for="country">Country</label>
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="password">
+                <div class="row col-lg-6 col-md-6">
+                    <div class="col">
+                        <label for="psw">Current Password</label>
+                        <input type="password" class="form-control">
+                    </div>
+                </div>
+                <div class="row col-lg-6 col-md-6 mt-4">
+                    <div class="col">
+                        <label for="psw">New Password</label>
+                        <input type="password" class="form-control">
+                    </div>
+                </div>
+                <div class="row col-lg-6 col-md-6 mt-4">
+                    <div class="col">
+                        <label for="psw">Confirm Password</label>
+                        <input type="password" class="form-control">
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="address">
+                <div class="row col-lg-6 col-md-6">
+                    <div class="col">
+                        <label for="address">Address</label>
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+                <div class="row col-lg-6 col-md-6 mt-4">
+                    <div class="col">
+                        <label for="city">City</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col">
+                        <label for="state">State</label>
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+                <div class="row col-lg-6 col-md-6 mt-4">
+                    <div class="col">
+                        <label for="pincode">Pincode</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col">
+                        <label for="country">Country</label>
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="payment-details">
+                <div class="row col-lg-6 col-md-6">
+                    <div class="col">
+                        <label for="card-name">Card Name</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col">
+                        <label for="card-num">Card Number</label>
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+                <div class="row col-lg-6 col-md-6 mt-4">
+                    <div class="col">
+                        <label for="expiry">Expiry</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col">
+                        <label for="cvv">CVV</label>
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid footer mt-5 py-2 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-4">Popular Products</h4>
+                    <a class="btn btn-link" href="">Acid Analyzer</a>
+                    <a class="btn btn-link" href="">Autoclaves</a>
+                    <a class="btn btn-link" href="">Baths and Circulators</a>
+                    <a class="btn btn-link" href="">Cabinets</a>
+                    <a class="btn btn-link" href="">Centrifuge</a>
+                    <a class="btn btn-link" href="">Freezers</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-4">Quick Links</h4>
+                    <a class="btn btn-link" href="">About Us</a>
+                    <a class="btn btn-link" href="">Contact Us</a>
+                    <a class="btn btn-link" href="">Our Services</a>
+                    <a class="btn btn-link" href="">Terms & Condition</a>
+                    <a class="btn btn-link" href="">Support</a>
+                    <a class="btn btn-link" href="account.html">My Accounts</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-4">Our Office</h4>
+                    <p class="mb-2"><i class="bi bi-geo-alt"></i>ClickLabs Hitech City Hyderabad 500081</p>
+                    <p class="mb-2"><i class="bi bi-telephone"></i></i>123456789</p>
+                    <p class="mb-2"><i class="bi bi-envelope"></i>info@example.com</p>
+
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-4">Contact Via Map</h4>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15224.997569041176!2d78.3662195997808!3d17.44777355574643!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb93dc8c5d69df%3A0x19688beb557fa0ee!2sHITEC%20City%2C%20Hyderabad%2C%20Telangana%20500081!5e0!3m2!1sen!2sin!4v1726207892942!5m2!1sen!2sin"
+                        width="250" height="150" style="border:3px solid violet; border-radius: 10px;"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright py-3">
+        <div class="text-center">
+            <img src="#" width="100" alt="">
+            Copyright &copy; 2024 &nbsp|&nbsp <a class="fw-medium text-light" href="#">www.ClickLabs.info</a>
+            &nbsp|&nbsp
+            All
+            Rights Reserved&nbsp .
+        </div>
+    </div>
+    <!-- Copyright End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-danger btn-lg-square rounded-circle back-to-top"><i
+            class="bi bi-arrow-up"></i></a>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function showAlert() {
+            document.getElementById("customAlert").style.display = "flex";
+        }
+
+        function closeAlert() {
+            document.getElementById("customAlert").style.display = "none";
+        }
+
+        function logout() {
+            alert("You have logged out successfully!");
+            closeAlert();
+        }
+
+    </script>
+</body>
+
+</html>
