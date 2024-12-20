@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html contenteditable lang="en">
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
-    <title>ClickLabs.com</title>
+    <title>LabCrown.com</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -21,21 +21,22 @@
 <body>
 
     <!-- Topbar Start -->
-    <div class="container-fluid top-bar text-white d-none d-lg-flex">
+    <div class="container-fluid top-bar text-white d-lg-flex">
         <div class="container">
             <div class="d-flex align-items-center mt-1">
                 <a href="index.html">
-                    <h2 class="text-white fw-bold m-0">ClickLabs</h2>
+                    <h2 class="text-white fw-bold m-0">LabCrown</h2>
                 </a>
-                <div class="ms-auto d-flex align-items-center">
+                <div class="search-bar ms-auto d-flex align-items-center">
                     <form role="search" method="get" action="">
                         <div class="input-container">
                             <input type="search" class="search-input" value="" name="s"
-                                placeholder="Search products..." />
-                            <button type="submit" class="search-submit" name="submit"><i
-                                    class="material-icons">search</i></button>
-                        </div><!-- input-container -->
+                                placeholder="Search products...">
+                            <button type="submit" class="search-submit" name="submit">Search</button>
+                        </div>
                     </form>
+                </div>
+                <div class="ms-auto d-flex align-items-center">
                     <small class="ms-4"><a class="text-white" href="mailto:info@examle.com" target="blank"
                             title="mail us"><i class="bi bi-envelope-at-fill"></i> info@example.com</a></small>
                     <small class="ms-4"> <a class="text-white" href="https://wa.me/+1234567890" target="_blank"
@@ -55,7 +56,7 @@
         <div class="container-fluid">
             <nav class="navbar navbar-expand-lg navbar-light p-lg-0">
                 <a href="index.html" class="navbar-brand d-lg-none">
-                    <h1 class="fw-bold m-0">ClickLabs</h1>
+                    <h1 class="fw-bold m-0">LabCrown</h1>
                 </a>
                 <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse"
                     data-bs-target="#navbarCollapse">
@@ -70,7 +71,7 @@
                         <a href="contact.html" class="nav-item nav-link">Contact</a>
                     </div>
                     <div class="ms-auto">
-                        <button class="btnq" href="quote.html">Get a Quote </button>
+                        <button class="btnq" onclick="window.location.href='quote.html'">Get a Quote </button>
                     </div>
                 </div>
                 <div class="profile">
@@ -80,7 +81,7 @@
                 </div>
                 <div class="menu">
                     <ul>
-                        <li><a href="#"><i class="ph-bold ph-user"></i>&nbsp;Profile</a></li>
+                        <li><a href="account.html"><i class="ph-bold ph-user"></i>&nbsp;Profile</a></li>
                         <li><a href="login.html"><i class="ph-bold ph-envelope-simple"></i>&nbsp;Login</a></li>
                         <li><a href="signup.html"><i class="ph-bold ph-gear-six"></i>&nbsp;Register</a></li>
                         <li><a href="#"><i class="ph-bold ph-question"></i>&nbsp;Help</a></li>
@@ -97,22 +98,21 @@
     <div class="container-fluid px-0 mb-5">
         <img class="w-100" src="images/banner.jpg" alt="Image">
     </div>
-    </div>
 
     <!-- about home******** -->
-    <div class="container">
+    <div class="container no_mobile">
         <div class="row mt-5">
             <div class="col-md-12">
-                <p align="center">At ClickLabs, we are committed to providing healthcare professionals with the
+                <p class="text-center">At Labcrown, we are committed to providing healthcare professionals with the
                     highest-quality medical equipment and innovative solutions designed to meet the dynamic needs of the
                     healthcare industry. Whether you're a hospital, clinic, research institution, or private practice,
                     we offer an extensive range of medical products that ensure safety, reliability, and efficiency for
                     both caregivers and patients.
 
-                    As a leading supplier of medical equipment, ClickLabs understands the challenges faced by healthcare
+                    As a leading supplier of medical equipment, Labcrown understands the challenges faced by healthcare
                     providers in delivering excellent patient care. Our mission is to support healthcare facilities with
                     the tools they need to operate at their best. Here are just a few reasons why healthcare providers
-                    trust ClickLabs:
+                    trust Labcrown:
                 </p>
             </div>
         </div>
@@ -124,8 +124,8 @@
         <div class="container">
             <div class="section-title no_mobile">
                 <h3>Lab Equipments</h3>
-                <p align="center">
-                    At ClickLabs we offer a comprehensive selection of high-quality laboratory equipment
+                <p class="text-center">
+                    At Labcrown we offer a comprehensive selection of high-quality laboratory equipment
                     designed to meet the needs of research, education, and industrial applications. Our products range
                     from precision instruments like balances, microscopes, and spectrophotometers to essential lab
                     supplies, including glassware, pipettes, and safety equipment. We source our equipment from trusted
@@ -143,7 +143,7 @@
                                 <img class="img-fluid" src="images/p2.png" alt="Icon">
                             </div>
                             <h5 class="mb-3">Product Name</h5>
-                                <button class="btnq" href="#">View Products </button>
+                            <button class="btnq" onclick="window.location.href='#'">View Products</button>
                         </div>
                     </div>
                 </div>
@@ -154,7 +154,7 @@
                                 <img class="img-fluid" src="images/p2.png" alt="Icon">
                             </div>
                             <h5 class="mb-3">Product Name</h5>
-                                <button class="btnq" href="#">View Products </button>
+                            <button class="btnq" onclick="window.location.href='#'">View Products</button>
                         </div>
                     </div>
                 </div>
@@ -165,7 +165,7 @@
                                 <img class="img-fluid" src="images/p2.png" alt="Icon">
                             </div>
                             <h5 class="mb-3">Product Name</h5>
-                                <button class="btnq" href="#">View Products </button>
+                            <button class="btnq" onclick="window.location.href='#'">View Products</button>
                         </div>
                     </div>
                 </div>
@@ -176,7 +176,7 @@
                                 <img class="img-fluid" src="images/p2.png" alt="Icon">
                             </div>
                             <h5 class="mb-3">Product Name</h5>
-                                <button class="btnq" href="#">View Products </button>
+                            <button class="btnq" onclick="window.location.href='#'">View Products</button>
                         </div>
                     </div>
                 </div>
@@ -187,7 +187,7 @@
                                 <img class="img-fluid" src="images/p2.png" alt="Icon">
                             </div>
                             <h5 class="mb-3">Product Name</h5>
-                                <button class="btnq" href="#">View Products </button>
+                            <button class="btnq" onclick="window.location.href='#'">View Products</button>
                         </div>
                     </div>
                 </div>
@@ -198,7 +198,7 @@
                                 <img class="img-fluid" src="images/p2.png" alt="Icon">
                             </div>
                             <h5 class="mb-3">Product Name</h5>
-                                <button class="btnq" href="#">View Products </button>
+                            <button class="btnq" onclick="window.location.href='#'">View Products</button>
                         </div>
                     </div>
                 </div>
@@ -209,7 +209,7 @@
                                 <img class="img-fluid" src="images/p2.png" alt="Icon">
                             </div>
                             <h5 class="mb-3">Product Name</h5>
-                                <button class="btnq" href="#">View Products </button>
+                            <button class="btnq" onclick="window.location.href='#'">View Products</button>
                         </div>
                     </div>
                 </div>
@@ -220,7 +220,7 @@
                                 <img class="img-fluid" src="images/p2.png" alt="Icon">
                             </div>
                             <h5 class="mb-3">Product Name</h5>
-                                <button class="btnq" href="#">View Products </button>
+                            <button class="btnq" onclick="window.location.href='#'">View Products</button>
                         </div>
                     </div>
                 </div>
@@ -235,8 +235,8 @@
     <div class="container mt-5">
         <div class="section-title no_mobile">
             <h3>Analog Equipments</h3>
-            <p align="center">
-                At ClickLabs we specialize in high-quality analog laboratory equipment designed for precision
+            <p class="text-center">
+                At Labcrown we specialize in high-quality analog laboratory equipment designed for precision
                 and reliability. Our extensive range includes a variety of precision instruments, ideal for a wide range
                 of scientific applications. Each piece is crafted with durability and accuracy in mind, ensuring
                 consistent performance for both routine and advanced
@@ -359,7 +359,7 @@
         <div class="row err_om">
             <div class="section-title no_mobile">
                 <h3>Featured Products</h3>
-                <p align="center">
+                <p class="text-center">
                     We provide a wide range of high-quality laboratory equipment, including
                     precision instruments, glassware, safety tools, and more. Our products are sourced from trusted
                     manufacturers, ensuring reliability and accuracy for all scientific, research, and industrial
@@ -564,8 +564,8 @@
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-white mb-4">Our Office</h4>
-                    <p class="mb-2"><i class="bi bi-geo-alt"></i>ClickLabs Hitech City Hyderabad 500081</p>
-                    <p class="mb-2"><i class="bi bi-telephone"></i></i>123456789</p>
+                    <p class="mb-2"><i class="bi bi-geo-alt"></i>Labcrown Hitech City Hyderabad 500081</p>
+                    <p class="mb-2"><i class="bi bi-telephone"></i>123456789</p>
                     <p class="mb-2"><i class="bi bi-envelope"></i>info@example.com</p>
 
                 </div>
@@ -579,22 +579,19 @@
             </div>
         </div>
     </div>
-    </div>
     <!-- Footer End -->
-
 
     <!-- Copyright Start -->
     <div class="container-fluid copyright py-3">
         <div class="text-center">
             <img src="#" width="100" alt="">
-            Copyright &copy; 2024 &nbsp|&nbsp <a class="fw-medium text-light" href="#">www.ClickLabs.info</a>
-            &nbsp|&nbsp
+            Copyright &copy; 2024 &nbsp;|&nbsp; <a class="fw-medium text-light" href="#">www.Labcrown.info</a>
+            &nbsp;|&nbsp;
             All
-            Rights Reserved&nbsp .
+            Rights Reserved
         </div>
     </div>
     <!-- Copyright End -->
-
 
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-danger btn-lg-square rounded-circle back-to-top"><i
