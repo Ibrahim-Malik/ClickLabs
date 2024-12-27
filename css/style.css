@@ -28,12 +28,16 @@
 }
 
 .top-bar {
-  background-color: rgb(78, 107, 194);
+  background-color: #6f7579cb;
   height: 50px;
 }
 
 /* ****************** Search bar ************ */
 
+.search-bar {
+  position: relative;
+  left: 70px;
+}
 
 .input-container {
   display: flex;
@@ -58,8 +62,7 @@
 }
 
 .search-submit {
-  background: #D500F9;
-  color: #FFFFFF;
+  background-image: linear-gradient(to top right, #039be5, #29b6f6);  color: #FFFFFF;
   vertical-align: middle;
   padding: 0 20px;
   border: 0;
@@ -97,7 +100,7 @@
   z-index: 1;
   box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
   margin-left: 41px;
-  background: #4e6bc2;
+  background: #6f7579cb;
   margin-right: 45px;
 }
 
@@ -202,7 +205,7 @@ ul {
   font-weight: 600;
   padding: 10px;
   font-size: 15px;
-  background: rgb(78, 107, 194);
+  background: #6f7579cb;
   border-top-left-radius: 20px;
 }
 
@@ -489,7 +492,7 @@ ul {
   padding-top: 66px;
 }
 
-.submit{
+.submit {
   margin: 23px auto;
 }
 
@@ -593,83 +596,82 @@ ul {
 
 
 .profile {
-    position: relative;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 12px;
-    cursor: pointer;
-    text-align: end;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  text-align: end;
 }
 
 .profile span {
   margin-right: 45px;
 }
 
- 
+
 
 .menu {
-    position: absolute;
-    top: calc(100%);
-    right: 16px;
-    width: 172px;
-    min-height: 100px;
-    background: #fff;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
-    opacity: 0;
-    transform: translateY(-10px);
-    /* visibility: hidden; */
-    transition: 500ms;
+  position: absolute;
+  top: calc(100%);
+  right: 16px;
+  width: 172px;
+  min-height: 100px;
+  background: #fff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: 500ms;
 }
 
 .menu::before {
-    content: '';
-    position: absolute;
-    top: -10px;
-    right: 77px;
-    width: 20px;
-    height: 20px;
-    background: #fff;
-    transform: rotate(45deg);
-    z-index: -1;
-    background-color: #a3a3a3;
+  content: '';
+  position: absolute;
+  top: -10px;
+  right: 77px;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  transform: rotate(45deg);
+  z-index: -1;
+  background-color: #a3a3a3;
 }
 
 .menu.active {
-    opacity: 1;
-    transform: translateY(0);
-    visibility: visible;
-    z-index: 999;
+  z-index: 999;
+  opacity: 1;
+  transform: translateY(0);
+  visibility: visible;
 }
 
 
 .menu ul {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    z-index: 10;
-    background: #d4d4d4;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  z-index: 10;
+  background: #d4d4d4;
 }
 
 .menu ul li {
-    list-style: none;
+  list-style: none;
 }
 
 .menu ul li:hover {
-    background: #eee;
+  background: #eee;
 }
 
 .menu ul li a {
-    text-decoration: none;
-    color: #000;
-    display: flex;
-    align-items: center;
-    padding: 15px 20px;
-    gap: 6px;
+  text-decoration: none;
+  color: #000;
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+  gap: 6px;
 }
 
 .menu ul li a i {
-    font-size: 1.2em;
+  font-size: 1.2em;
 }
 
 
@@ -729,8 +731,7 @@ ul {
   width: 240px;
   height: 300px;
   background: rgba(217, 217, 217, 0.58);
-  border: 1px solid white;
-  box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+  box-shadow: 2px 7px 12px rgba(0, 0, 0, 0.22);
   text-align: center;
   transition: all 0.5s;
   display: flex;
@@ -741,7 +742,6 @@ ul {
 }
 
 .card:hover {
-  border: 2px solid white;
   transform: scale(1.03);
 }
 
@@ -851,7 +851,7 @@ a {
 
 /*** Footer ***/
 .footer {
-  background-color: rgb(152, 164, 255);
+  background-color: rgba(160, 163, 167, 0.699);
   ;
   color: black;
 }
@@ -1177,6 +1177,7 @@ td {
   bottom: 21px;
   right: 40px;
   color: black;
+  cursor: pointer;
 }
 
 
@@ -1447,7 +1448,6 @@ td {
 .tbodys tr:nth-child(odd) {
   background-color: #ffffff;
 }
-
 
 
 
@@ -1868,7 +1868,7 @@ div#myCanvas {
   max-width: 400px;
   background: #fff;
   padding: 20px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, .1) box-sizing: border-box
+  box-shadow: 0 4px 10px rgba(0, 0, 0, .1)
 }
 
 .login-form h1 {
@@ -1946,7 +1946,7 @@ div#myCanvas {
 /* --------------------- Login ends --------------------- */
 
 /* ====================== order details ======================== */
-.list-group{
+.list-group {
   border: 1px solid rgb(77, 77, 77);
 }
 
@@ -1961,10 +1961,11 @@ div#myCanvas {
   justify-content: center;
   font-size: 20px;
   font-weight: bold;
-  position: relative; /* Allow positioning of the icon */
+  position: relative;
+  /* Allow positioning of the icon */
 }
 
- 
+
 
 .line {
   flex-grow: 1;
@@ -1974,6 +1975,9 @@ div#myCanvas {
 }
 
 /* =================== Account ============================= */
+.hiden {
+  visibility: hidden;
+}
 
 .nav-tabs .nav-link.active {
   background-color: #007bff !important;
@@ -1984,7 +1988,8 @@ div#myCanvas {
 .rounded-circle {
   width: 5vw;
 }
-.aa{
+
+.aa {
   margin: -13px 4px -1px 1px !important;
   padding: 5px 15px 7px 15px !important;
   border: 1px solid rgb(206, 206, 206) !important;
@@ -2020,7 +2025,7 @@ div#myCanvas {
   padding: 3px 19px;
   margin: -2px 34px 8px 25px;
   border-radius: 8px;
-  }
+}
 
 .ttt:hover {
   background-color: #0056b3;
@@ -2035,3 +2040,68 @@ div#myCanvas {
   background-color: #dc3545;
   color: white;
 }
+
+
+
+
+
+
+/* ============================== Responsive ================================ */
+
+@media (max-width:431px) {
+  .profile {
+    display: none;
+  }
+
+  .top-bar {
+    background: none;
+  }
+
+  .search-bar {
+    position: absolute;
+    top: 2%;
+    left: 4%;
+  }
+
+  .search-bar form {
+    width: 50%;
+  }
+
+  .search-submit {
+    /* width: 25%; */
+    align-items: center;
+    text-align: center;
+  }
+
+  .search-input {
+    font-size: 80%;
+    line-height: 0.2;
+    padding: 8px 30px;
+  }
+
+  .no_mobile {
+    display: none;
+  }
+
+  .bg-light {
+    --bs-bg-opacity: 1;
+    background-color: rgb(167, 199, 232) !important;
+    top: -26px;
+    position: relative;
+    left: -22px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
