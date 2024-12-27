@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Contact</title>
+    <title>LabCrown.com</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -13,41 +13,36 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
 
-    <!-- Libraries Stylesheet -->
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
 
 </head>
 
 <body>
 
     <!-- Topbar Start -->
-    <div class="container-fluid top-bar text-white d-none d-lg-flex">
+    <div class="container-fluid top-bar text-white d-lg-flex">
         <div class="container">
             <div class="d-flex align-items-center mt-1">
                 <a href="index.html">
-                    <h2 class="text-white fw-bold m-0">ClickLabs</h2>
+                    <h2 class="text-white fw-bold m-0">LabCrown</h2>
                 </a>
-                <div class="ms-auto d-flex align-items-center">
-
-                    <form role="search" method="get" action="">
+                <div class="search-bar ms-auto d-flex align-items-center">
+                    <form role="search" method="get" action="#">
                         <div class="input-container">
                             <input type="search" class="search-input" value="" name="s"
-                                placeholder="Search products..." />
-                            <button type="submit" class="search-submit" name="submit"><i
-                                    class="material-icons">search</i></button>
-                        </div><!-- input-container -->
+                                placeholder="Search products...">
+                            <button type="submit" class="search-submit" name="submit">Search</button>
+                        </div>
                     </form>
+                </div>
+                <div class="ms-auto d-flex align-items-center">
                     <small class="ms-4"><a class="text-white" href="mailto:info@examle.com" target="blank"
                             title="mail us"><i class="bi bi-envelope-at-fill"></i> info@example.com</a></small>
                     <small class="ms-4"> <a class="text-white" href="https://wa.me/+1234567890" target="_blank"
                             title="Whatsapp us"><i class="bi bi-whatsapp"></i> +012 345 67890</a>
                     </small>
                     <div class="ms-3 d-flex">
-
-
                     </div>
                 </div>
             </div>
@@ -61,7 +56,7 @@
         <div class="container-fluid">
             <nav class="navbar navbar-expand-lg navbar-light p-lg-0">
                 <a href="index.html" class="navbar-brand d-lg-none">
-                    <h1 class="fw-bold m-0">ClickLabs</h1>
+                    <h1 class="fw-bold m-0">LabCrown</h1>
                 </a>
                 <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse"
                     data-bs-target="#navbarCollapse">
@@ -69,19 +64,35 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav">
-                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <a href="index.html" class="nav-item nav-link ">Home</a>
                         <a href="Laboratoy-equipments.html" class="nav-item nav-link">Laboratoy Equipments</a>
-
                         <a href="catalogs.html" class="nav-item nav-link">Catalogs</a>
                         <a href="about.html" class="nav-item nav-link">About</a>
                         <a href="contact.html" class="nav-item nav-link">Contact</a>
                     </div>
                     <div class="ms-auto">
-                        <button class="btnq" href="quote.html">Get a Quote </button>
+                        <button class="btnq" onclick="window.location.href='quote.html'">Get a Quote </button>
                     </div>
                 </div>
-                <a href="signup.html" <button type="button" class="con-btn btn btn-info rtt ms-5">SignUP</button></a>
-                <a href="login.html" <button type="button" class="con-btn btn btn-info rtt ">LogIn</button></a>
+
+
+                <div class="profile">
+                    <div class="user">
+                        <span>My Account</span>
+                    </div>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="account.html"><i class="ph-bold ph-user"></i>&nbsp;Profile</a></li>
+                        <li><a href="login.html"><i class="ph-bold ph-envelope-simple"></i>&nbsp;Login</a></li>
+                        <li><a href="signup.html"><i class="ph-bold ph-gear-six"></i>&nbsp;Register</a></li>
+                        <li><a href="#"><i class="ph-bold ph-question"></i>&nbsp;Help</a></li>
+                        <li><a href="#"><i class="ph-bold ph-sign-out"></i>&nbsp;Sign Out</a></li>
+                    </ul>
+                </div>
+
+
+
             </nav>
         </div>
     </div>
@@ -97,7 +108,7 @@
                         <div class="col-xl-5 col-md-12 col-lg-5">
                             <div class="about-text">
                                 <p>Generate Catalog For :</p>
-                                <h1>Biological Air Sampler BAS-101</h1>
+                                <h2>Biological Air Sampler BAS-101</h2>
                                 <a class="btnc btn_quick" href="images/101.pdf" download onclick="ExportPdf()">Download
                                     Catalog</a>
                             </div>
@@ -107,7 +118,7 @@
                                 <div class="single-catalog-inner">
                                     <div class="catalog-first middle">
                                         <div class="catalog-design-logo">
-                                            <h1>ClickLabs.com</h1>
+                                            <h3>Labcrown.com</h3>
                                         </div>
                                         <div class="row justify-content-center m-0">
                                             <div class="col-md-12 col-sm-12 col-xl-12 col-lg-12">
@@ -302,7 +313,7 @@
                                     </div>
                                 </div>
                                 <div class="catalog-end">
-                                    <p class="catalog-end-text"><b>ClickLabs product catalog</b> <b>Generated on:
+                                    <p class="catalog-end-text"><b>Labcrown product catalog</b> <b>Generated on:
                                             25/11/2024</b></p>
                                     <div class="catalog-end-logo">
                                         <div class="catalog-logo">
@@ -313,12 +324,11 @@
                                             <div class="location">
                                                 <div class="location-address">
                                                     <p>Email:</p>
-                                                    <a href="mailto:Info@ClickLabs.com">Info@ClickLabs.com</a>
+                                                    <a href="mailto:Info@Labcrown.com">Info@Labcrown.com</a>
                                                 </div>
                                                 <div class="location-address">
                                                     <p>Website:</p>
-                                                    <a href="https://ClickLabs.com/"
-                                                        target="_blank">www.ClickLabs.com</a>
+                                                    <a href="https://Labcrown.com/" target="_blank">www.Labcrown.com</a>
                                                 </div>
                                                 <div class="location-address">
                                                     <p>Phone:</p>
@@ -337,17 +347,7 @@
     </div>
 
 
-
     <script>
-
-        kendo.pdf.defineFont({
-            "DejaVu Sans": "https://kendo.cdn.telerik.com/2016.2.607/styles/fonts/DejaVu/DejaVuSans.ttf",
-            "DejaVu Sans|Bold": "https://kendo.cdn.telerik.com/2016.2.607/styles/fonts/DejaVu/DejaVuSans-Bold.ttf",
-            "DejaVu Sans|Bold|Italic": "https://kendo.cdn.telerik.com/2016.2.607/styles/fonts/DejaVu/DejaVuSans-Oblique.ttf",
-            "DejaVu Sans|Italic": "https://kendo.cdn.telerik.com/2016.2.607/styles/fonts/DejaVu/DejaVuSans-Oblique.ttf",
-            "WebComponentsIcons": "https://kendo.cdn.telerik.com/2017.1.223/styles/fonts/glyphs/WebComponentsIcons.ttf"
-        });
-
         function ExportPdf() {
             kendo.drawing
                 .drawDOM("#myCanvas",

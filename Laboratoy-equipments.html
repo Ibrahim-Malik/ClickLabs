@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>ClickLabs.com</title>
+    <title>LabCrown.com</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -21,21 +21,22 @@
 <body>
 
     <!-- Topbar Start -->
-    <div class="container-fluid top-bar text-white d-none d-lg-flex">
+    <div class="container-fluid top-bar text-white d-lg-flex">
         <div class="container">
             <div class="d-flex align-items-center mt-1">
                 <a href="index.html">
-                    <h2 class="text-white fw-bold m-0">ClickLabs</h2>
+                    <h2 class="text-white fw-bold m-0">LabCrown</h2>
                 </a>
-                <div class="ms-auto d-flex align-items-center">
-                    <form role="search" method="get" action="">
+                <div class="search-bar ms-auto d-flex align-items-center">
+                    <form role="search" method="get" action="#">
                         <div class="input-container">
                             <input type="search" class="search-input" value="" name="s"
-                                placeholder="Search products..." />
-                            <button type="submit" class="search-submit" name="submit"><i
-                                    class="material-icons">search</i></button>
-                        </div><!-- input-container -->
+                                placeholder="Search products...">
+                            <button type="submit" class="search-submit" name="submit">Search</button>
+                        </div>
                     </form>
+                </div>
+                <div class="ms-auto d-flex align-items-center">
                     <small class="ms-4"><a class="text-white" href="mailto:info@examle.com" target="blank"
                             title="mail us"><i class="bi bi-envelope-at-fill"></i> info@example.com</a></small>
                     <small class="ms-4"> <a class="text-white" href="https://wa.me/+1234567890" target="_blank"
@@ -55,7 +56,7 @@
         <div class="container-fluid">
             <nav class="navbar navbar-expand-lg navbar-light p-lg-0">
                 <a href="index.html" class="navbar-brand d-lg-none">
-                    <h1 class="fw-bold m-0">ClickLabs</h1>
+                    <h1 class="fw-bold m-0">LabCrown</h1>
                 </a>
                 <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse"
                     data-bs-target="#navbarCollapse">
@@ -70,9 +71,11 @@
                         <a href="contact.html" class="nav-item nav-link">Contact</a>
                     </div>
                     <div class="ms-auto">
-                        <button class="btnq" href="quote.html">Get a Quote </button>
+                        <button class="btnq" onclick="window.location.href='quote.html'">Get a Quote </button>
                     </div>
                 </div>
+
+
                 <div class="profile">
                     <div class="user">
                         <span>My Account</span>
@@ -80,13 +83,16 @@
                 </div>
                 <div class="menu">
                     <ul>
-                        <li><a href="#"><i class="ph-bold ph-user"></i>&nbsp;Profile</a></li>
-                        <li><a href="#"><i class="ph-bold ph-envelope-simple"></i>&nbsp;Login</a></li>
-                        <li><a href="#"><i class="ph-bold ph-gear-six"></i>&nbsp;Register</a></li>
+                        <li><a href="account.html"><i class="ph-bold ph-user"></i>&nbsp;Profile</a></li>
+                        <li><a href="login.html"><i class="ph-bold ph-envelope-simple"></i>&nbsp;Login</a></li>
+                        <li><a href="signup.html"><i class="ph-bold ph-gear-six"></i>&nbsp;Register</a></li>
                         <li><a href="#"><i class="ph-bold ph-question"></i>&nbsp;Help</a></li>
                         <li><a href="#"><i class="ph-bold ph-sign-out"></i>&nbsp;Sign Out</a></li>
                     </ul>
                 </div>
+
+
+
             </nav>
         </div>
     </div>
@@ -98,7 +104,7 @@
     <section class="section_top mt-5">
         <div class="container">
             <div class="main-head">
-                <h1>Equipment Categories</h1>
+                <h2>Equipment Categories</h2>
             </div>
             <div class="row">
                 <div class="grid-container">
@@ -110,7 +116,7 @@
                             <div class="row py-3">
                                 <div class="col-lg-12">
                                     <div class="img_center_cate">
-                                        <a href="ClickLabs.com/critical-care"><img src="images/p1.png"
+                                        <a href="Labcrown.com/critical-care"><img src="images/p1.png"
                                                 alt="Critical Care" class="img_cate"> </a>
                                     </div>
                                     <ul>
@@ -131,17 +137,17 @@
                             <div class="row py-3">
                                 <div class="col-lg-12">
                                     <div class="img_center_cate">
-                                        <a href="ClickLabs.com/daily-care"><img src="images/p1.png" alt="Daily Care"
+                                        <a href="Labcrown.com/daily-care"><img src="images/p1.png" alt="Daily Care"
                                                 class="img_cate"> </a>
                                     </div>
                                     <ul>
-                                        <li class="cate_textt"><a href="ClickLabs.com/breast-pump"> Automatic
+                                        <li class="cate_textt"><a href="Labcrown.com/breast-pump"> Automatic
                                                 Autoclave</a>
                                         </li>
-                                        <li class="cate_textt"><a href="ClickLabs.com/breast-pump"> Benchtop
+                                        <li class="cate_textt"><a href="Labcrown.com/breast-pump"> Benchtop
                                                 Autoclave</a>
                                         </li>
-                                        <li class="cate_textt"><a href="ClickLabs.com/breast-pump"> N-Autoclave</a></li>
+                                        <li class="cate_textt"><a href="Labcrown.com/breast-pump"> N-Autoclave</a></li>
 
                                     </ul>
                                 </div>
@@ -156,15 +162,15 @@
                             <div class="row py-3">
                                 <div class="col-lg-12">
                                     <div class="img_center_cate">
-                                        <a href="ClickLabs.com/general-aids"><img src="images/p1.png" alt="General Aids"
+                                        <a href="Labcrown.com/general-aids"><img src="images/p1.png" alt="General Aids"
                                                 class="img_cate"> </a>
                                     </div>
                                     <ul>
-                                        <li class="cate_textt"><a href="ClickLabs.com/dialyser-reprocessing-machine">
+                                        <li class="cate_textt"><a href="Labcrown.com/dialyser-reprocessing-machine">
                                                 Constant Temperature Metal Bath</a></li>
-                                        <li class="cate_textt"><a href="ClickLabs.com/medical-printing-system">
+                                        <li class="cate_textt"><a href="Labcrown.com/medical-printing-system">
                                                 Heating Water Bath</a></li>
-                                        <li class="cate_textt"><a href="ClickLabs.com/nebulizer"> Shock Metal Bath</a>
+                                        <li class="cate_textt"><a href="Labcrown.com/nebulizer"> Shock Metal Bath</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -179,13 +185,13 @@
                             <div class="row py-3">
                                 <div class="col-lg-12">
                                     <div class="img_center_cate">
-                                        <a href="ClickLabs.com/in-patient-solutions"><img src="images/p1.png"
+                                        <a href="Labcrown.com/in-patient-solutions"><img src="images/p1.png"
                                                 alt="In-Patient Solutions" class="img_cate"> </a>
                                     </div>
                                     <ul>
-                                        <li class="cate_textt"><a href="ClickLabs.com/hospital-bed"> Fast Semi-Dry Blot
+                                        <li class="cate_textt"><a href="Labcrown.com/hospital-bed"> Fast Semi-Dry Blot
                                                 System</a></li>
-                                        <li class="cate_textt"><a href="ClickLabs.com/medical-trolley"> Mini Vertical
+                                        <li class="cate_textt"><a href="Labcrown.com/medical-trolley"> Mini Vertical
                                                 Blot</a></li>
                                     </ul>
                                 </div>
@@ -200,17 +206,17 @@
                             <div class="row py-3">
                                 <div class="col-lg-12">
                                     <div class="img_center_cate">
-                                        <a href="ClickLabs.com/laboratory-analyser"><img src="images/p1.png"
+                                        <a href="Labcrown.com/laboratory-analyser"><img src="images/p1.png"
                                                 alt="Laboratory Analyser" class="img_cate"> </a>
                                     </div>
                                     <ul>
-                                        <li class="cate_textt"><a href="ClickLabs.com/hematology-analyser">
+                                        <li class="cate_textt"><a href="Labcrown.com/hematology-analyser">
                                                 Biological Safety Cabinet</a></li>
-                                        <li class="cate_textt"><a href="ClickLabs.com/chemistry-analyser">
+                                        <li class="cate_textt"><a href="Labcrown.com/chemistry-analyser">
                                                 Horizontal Laminar Flow Cabinet</a></li>
-                                        <li class="cate_textt"><a href="ClickLabs.com/coagulation-analyser">
+                                        <li class="cate_textt"><a href="Labcrown.com/coagulation-analyser">
                                                 Vertical Air Laminar Flow Cabinet</a></li>
-                                        <li class="cate_textt"><a href="ClickLabs.com/hba1c-analyser"> Vertical and
+                                        <li class="cate_textt"><a href="Labcrown.com/hba1c-analyser"> Vertical and
                                                 Horizontal Laminar Flow Cabinet</a></li>
                                     </ul>
                                 </div>
@@ -225,11 +231,11 @@
                             <div class="row py-3">
                                 <div class="col-lg-12">
                                     <div class="img_center_cate">
-                                        <a href="ClickLabs.com/in-vitro-diagnostic"><img src="images/p1.png"
+                                        <a href="Labcrown.com/in-vitro-diagnostic"><img src="images/p1.png"
                                                 alt="In-Vitro Diagnostic" class="img_cate"> </a>
                                     </div>
                                     <ul>
-                                        <li class="cate_textt"><a href="ClickLabs.com/auto-blood-culture-machine">
+                                        <li class="cate_textt"><a href="Labcrown.com/auto-blood-culture-machine">
                                                 Centrifuge</a></li>
                                     </ul>
                                 </div>
@@ -244,17 +250,17 @@
                             <div class="row py-3">
                                 <div class="col-lg-12">
                                     <div class="img_center_cate">
-                                        <a href="ClickLabs.com/laboratory-analyser"><img src="images/p1.png"
+                                        <a href="Labcrown.com/laboratory-analyser"><img src="images/p1.png"
                                                 alt="Laboratory Analyser" class="img_cate"> </a>
                                     </div>
                                     <ul>
-                                        <li class="cate_textt"><a href="ClickLabs.com/chemistry-analyser">
+                                        <li class="cate_textt"><a href="Labcrown.com/chemistry-analyser">
                                                 Basic Electrophoresis Power Supply</a></li>
-                                        <li class="cate_textt"><a href="ClickLabs.com/coagulation-analyser">
+                                        <li class="cate_textt"><a href="Labcrown.com/coagulation-analyser">
                                                 Mini Horizontal Electrophoresis Cell</a></li>
-                                        <li class="cate_textt"><a href="ClickLabs.com/hba1c-analyser">Mini Vertical
+                                        <li class="cate_textt"><a href="Labcrown.com/hba1c-analyser">Mini Vertical
                                                 Electrophoresis Cell</a></li>
-                                        <li class="cate_textt"><a href="ClickLabs.com/hematology-analyser">
+                                        <li class="cate_textt"><a href="Labcrown.com/hematology-analyser">
                                                 Multipurpose Horizontal Electrophoresis Cell</a></li>
                                     </ul>
                                 </div>
@@ -269,11 +275,11 @@
                             <div class="row py-3">
                                 <div class="col-lg-12">
                                     <div class="img_center_cate">
-                                        <a href="ClickLabs.com/medical-consumables"><img src="images/p1.png"
+                                        <a href="Labcrown.com/medical-consumables"><img src="images/p1.png"
                                                 alt="Medical Consumables" class="img_cate"> </a>
                                     </div>
                                     <ul>
-                                        <li class="cate_textt"><a href="ClickLabs.com/dental-handpiece"> Flame
+                                        <li class="cate_textt"><a href="Labcrown.com/dental-handpiece"> Flame
                                                 Photometer</a>
                                         </li>
                                     </ul>
@@ -289,11 +295,11 @@
                             <div class="row py-3">
                                 <div class="col-lg-12">
                                     <div class="img_center_cate">
-                                        <a href="ClickLabs.com/medical-diagnostic"><img src="images/p1.png"
+                                        <a href="Labcrown.com/medical-diagnostic"><img src="images/p1.png"
                                                 alt="Medical Diagnostic" class="img_cate"> </a>
                                     </div>
                                     <ul>
-                                        <li class="cate_textt"><a href="ClickLabs.com/breast-scanning-system">
+                                        <li class="cate_textt"><a href="Labcrown.com/breast-scanning-system">
                                                 Benchtop Freeze Dryer</a></li>
                                     </ul>
                                 </div>
@@ -308,11 +314,11 @@
                             <div class="row py-3">
                                 <div class="col-lg-12">
                                     <div class="img_center_cate">
-                                        <a href="ClickLabs.com/medical-disposables"><img src="images/p1.png"
+                                        <a href="Labcrown.com/medical-disposables"><img src="images/p1.png"
                                                 alt="Medical Disposables" class="img_cate"> </a>
                                     </div>
                                     <ul>
-                                        <li class="cate_textt"><a href="ClickLabs.com/elastomeric-infusion-pump"> -86˚C
+                                        <li class="cate_textt"><a href="Labcrown.com/elastomeric-infusion-pump"> -86˚C
                                                 Ultra
                                                 Low Freezer</a></li>
                                     </ul>
@@ -328,11 +334,11 @@
                             <div class="row py-3">
                                 <div class="col-lg-12">
                                     <div class="img_center_cate">
-                                        <a href="ClickLabs.com/mobility-aids"><img src="images/p1.png"
+                                        <a href="Labcrown.com/mobility-aids"><img src="images/p1.png"
                                                 alt="Mobility Aids" class="img_cate"> </a>
                                     </div>
                                     <ul>
-                                        <li class="cate_textt"><a href="ClickLabs.com/mobility-scooter">
+                                        <li class="cate_textt"><a href="Labcrown.com/mobility-scooter">
                                                 Fume Hood</a></li>
                                     </ul>
                                 </div>
@@ -347,11 +353,11 @@
                             <div class="row py-3">
                                 <div class="col-lg-12">
                                     <div class="img_center_cate">
-                                        <a href="ClickLabs.com/or-solutions"><img src="images/p1.png" alt="OR Solutions"
+                                        <a href="Labcrown.com/or-solutions"><img src="images/p1.png" alt="OR Solutions"
                                                 class="img_cate"> </a>
                                     </div>
                                     <ul>
-                                        <li class="cate_textt"><a href="ClickLabs.com/autopsy-table"> Heated
+                                        <li class="cate_textt"><a href="Labcrown.com/autopsy-table"> Heated
                                                 Incubator</a>
                                         </li>
                                     </ul>
@@ -367,17 +373,17 @@
                             <div class="row py-3">
                                 <div class="col-lg-12">
                                     <div class="img_center_cate">
-                                        <a href="ClickLabs.com/patient-transfer-solutions"><img src="images/p1.png"
+                                        <a href="Labcrown.com/patient-transfer-solutions"><img src="images/p1.png"
                                                 alt="Patient Transfer Solutions" class="img_cate"> </a>
                                     </div>
                                     <ul>
-                                        <li class="cate_textt"><a href="ClickLabs.com/stretchers">
+                                        <li class="cate_textt"><a href="Labcrown.com/stretchers">
                                                 3D Shaker</a></li>
-                                        <li class="cate_textt"><a href="ClickLabs.com/stretchers">
+                                        <li class="cate_textt"><a href="Labcrown.com/stretchers">
                                                 Circular Shaker</a></li>
-                                        <li class="cate_textt"><a href="ClickLabs.com/stretchers">
+                                        <li class="cate_textt"><a href="Labcrown.com/stretchers">
                                                 NC Linear Shaker</a></li>
-                                        <li class="cate_textt"><a href="ClickLabs.com/stretchers">
+                                        <li class="cate_textt"><a href="Labcrown.com/stretchers">
                                                 Tilting Shaker</a></li>
                                     </ul>
                                 </div>
@@ -392,11 +398,11 @@
                             <div class="row py-3">
                                 <div class="col-lg-12">
                                     <div class="img_center_cate">
-                                        <a href="ClickLabs.com/respiratory-aids"><img src="images/p1.png"
+                                        <a href="Labcrown.com/respiratory-aids"><img src="images/p1.png"
                                                 alt="Respiratory Aids" class="img_cate"> </a>
                                     </div>
                                     <ul>
-                                        <li class="cate_textt"><a href="ClickLabs.com/cpap-machine"> Biological
+                                        <li class="cate_textt"><a href="Labcrown.com/cpap-machine"> Biological
                                                 Microscope</a></li>
                                     </ul>
                                 </div>
@@ -411,17 +417,17 @@
                             <div class="row py-3">
                                 <div class="col-lg-12">
                                     <div class="img_center_cate">
-                                        <a href="ClickLabs.com/surgical"><img src="images/p1.png" alt="Surgical"
+                                        <a href="Labcrown.com/surgical"><img src="images/p1.png" alt="Surgical"
                                                 class="img_cate"> </a>
                                     </div>
                                     <ul>
-                                        <li class="cate_textt"><a href="ClickLabs.com/anaesthesia-system">
+                                        <li class="cate_textt"><a href="Labcrown.com/anaesthesia-system">
                                                 Adjustable Vacuum Drying Oven</a></li>
-                                        <li class="cate_textt"><a href="ClickLabs.com/c-arm-x-ray-imaging">
+                                        <li class="cate_textt"><a href="Labcrown.com/c-arm-x-ray-imaging">
                                                 Drying Oven</a></li>
-                                        <li class="cate_textt"><a href="ClickLabs.com/surgical-diathermy">
+                                        <li class="cate_textt"><a href="Labcrown.com/surgical-diathermy">
                                                 Precision Oven</a></li>
-                                        <li class="cate_textt"><a href="ClickLabs.com/surgical-diathermy">
+                                        <li class="cate_textt"><a href="Labcrown.com/surgical-diathermy">
                                                 Vacuum Drying Oven</a></li>
                                     </ul>
                                 </div>
@@ -436,13 +442,13 @@
                             <div class="row py-3">
                                 <div class="col-lg-12">
                                     <div class="img_center_cate">
-                                        <a href="ClickLabs.com/or-solutions"><img src="images/p1.png" alt="OR Solutions"
+                                        <a href="Labcrown.com/or-solutions"><img src="images/p1.png" alt="OR Solutions"
                                                 class="img_cate"> </a>
                                     </div>
                                     <ul>
-                                        <li class="cate_textt"><a href="ClickLabs.com/autopsy-table"> Mobile Ozone
+                                        <li class="cate_textt"><a href="Labcrown.com/autopsy-table"> Mobile Ozone
                                                 Generator</a></li>
-                                        <li class="cate_textt"><a href="ClickLabs.com/dental-chair"> Portable Ozone
+                                        <li class="cate_textt"><a href="Labcrown.com/dental-chair"> Portable Ozone
                                                 Generator</a></li>
                                     </ul>
                                 </div>
@@ -457,161 +463,166 @@
                             <div class="row py-3">
                                 <div class="col-lg-12">
                                     <div class="img_center_cate">
-                                        <a href="ClickLabs.com/or-solutions"><img src="images/p1.png" alt="OR Solutions"
+                                        <a href="Labcrown.com/or-solutions"><img src="images/p1.png" alt="OR Solutions"
                                                 class="img_cate"> </a>
                                     </div>
                                     <ul>
-                                        <li class="cate_textt"><a href="ClickLabs.com/autopsy-table"> Airborne Particle
+                                        <li class="cate_textt"><a href="Labcrown.com/autopsy-table"> Airborne Particle
                                                 Counter</a></li>
-                                        <li class="cate_textt"><a href="ClickLabs.com/dental-chair"> Laser Airborne
+                                        <li class="cate_textt"><a href="Labcrown.com/dental-chair"> Laser Airborne
                                                 Particle
                                                 Counter</a></li>
-                                        <li class="cate_textt"><a href="ClickLabs.com/examinationtreatment-chair">
+                                        <li class="cate_textt"><a href="Labcrown.com/examinationtreatment-chair">
                                                 Laser Counter</a></li>
-                                        <li class="cate_textt"><a href="ClickLabs.com/operating-table">
+                                        <li class="cate_textt"><a href="Labcrown.com/operating-table">
                                                 Portable Particle Counter</a></li>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="align_grid">
-                        <div class="row mb-0">
-                            <div class="col-lg-12">
-                                <p class="ourp_head"><a href="refrigerator.html">Refrigerator</a></p>
-                            </div>
-                            <div class="row py-3">
-                                <div class="col-lg-12">
-                                    <div class="img_center_cate">
-                                        <a href="ClickLabs.com/or-solutions"><img src="images/p1.png" alt="OR Solutions"
-                                                class="img_cate"> </a>
-                                    </div>
-                                    <ul>
-                                        <li class="cate_textt"><a href="ClickLabs.com/autopsy-table"> Blood
-                                                Refrigerator</a>
-                                        </li>
-                                        <li class="cate_textt"><a href="ClickLabs.com/dental-chair"> BOD Refrigerated
-                                                Incubator</a></li>
-                                        <li class="cate_textt"><a href="ClickLabs.com/examinationtreatment-chair">
-                                                Pharmaceutical Refrigerator</a></li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="align_grid">
-                        <div class="row mb-0">
-                            <div class="col-lg-12">
-                                <p class="ourp_head"><a href="spectrophotometer.html">Spectrophotometer</a></p>
-                            </div>
-                            <div class="row py-3">
+                        <div class="align_grid">
+                            <div class="row mb-0">
                                 <div class="col-lg-12">
-                                    <div class="img_center_cate">
-                                        <a href="ClickLabs.com/or-solutions"><img src="images/p1.png" alt="OR Solutions"
-                                                class="img_cate"> </a>
+                                    <p class="ourp_head"><a href="refrigerator.html">Refrigerator</a></p>
+                                </div>
+                                <div class="row py-3">
+                                    <div class="col-lg-12">
+                                        <div class="img_center_cate">
+                                            <a href="Labcrown.com/or-solutions"><img src="images/p1.png"
+                                                    alt="OR Solutions" class="img_cate"> </a>
+                                        </div>
+                                        <ul>
+                                            <li class="cate_textt"><a href="Labcrown.com/autopsy-table"> Blood
+                                                    Refrigerator</a>
+                                            </li>
+                                            <li class="cate_textt"><a href="Labcrown.com/dental-chair"> BOD Refrigerated
+                                                    Incubator</a></li>
+                                            <li class="cate_textt"><a href="Labcrown.com/examinationtreatment-chair">
+                                                    Pharmaceutical Refrigerator</a></li>
+                                        </ul>
                                     </div>
-                                    <ul>
-                                        <li class="cate_textt"><a href="ClickLabs.com/autopsy-table"> Atomic Absorption
-                                                SpectrophotometersDouble Beam UV VIS Spectrophotometer</a></li>
-                                        <li class="cate_textt"><a href="ClickLabs.com/dental-chair"> Double Beam UV VIS
-                                                Spectrophotometer</a></li>
-                                        <li class="cate_textt"><a href="ClickLabs.com/examinationtreatment-chair">
-                                                Micro Spectrophotometer</a></li>
-                                        <li class="cate_textt"><a href="ClickLabs.com/operating-table">
-                                                NIR Spectrophotometer</a></li>
-                                        <li class="cate_textt"><a href="ClickLabs.com/surgical-and-examination-lights">
-                                                Single Beam UV VIS Spectrophotometer</a></li>
-                                        <li class="cate_textt"><a href="ClickLabs.com/operating-table">
-                                                Visible Spectrophotometer</a></li>
-                                        <li class="cate_textt"><a href="ClickLabs.com/surgical-and-examination-lights">
-                                                X-ray Fluorescence Spectrometer</a></li>
-                                    </ul>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="align_grid">
-                        <div class="row mb-0">
-                            <div class="col-lg-12">
-                                <p class="ourp_head"><a href="sterilizer.html">Sterilizer</a></p>
-                            </div>
-                            <div class="row py-3">
+                        <div class="align_grid">
+                            <div class="row mb-0">
                                 <div class="col-lg-12">
-                                    <div class="img_center_cate">
-                                        <a href="ClickLabs.com/or-solutions"><img src="images/p1.png" alt="OR Solutions"
-                                                class="img_cate"> </a>
+                                    <p class="ourp_head"><a href="spectrophotometer.html">Spectrophotometer</a></p>
+                                </div>
+                                <div class="row py-3">
+                                    <div class="col-lg-12">
+                                        <div class="img_center_cate">
+                                            <a href="Labcrown.com/or-solutions"><img src="images/p1.png"
+                                                    alt="OR Solutions" class="img_cate"> </a>
+                                        </div>
+                                        <ul>
+                                            <li class="cate_textt"><a href="Labcrown.com/autopsy-table"> Atomic
+                                                    Absorption
+                                                    SpectrophotometersDouble Beam UV VIS Spectrophotometer</a></li>
+                                            <li class="cate_textt"><a href="Labcrown.com/dental-chair"> Double Beam UV
+                                                    VIS
+                                                    Spectrophotometer</a></li>
+                                            <li class="cate_textt"><a href="Labcrown.com/examinationtreatment-chair">
+                                                    Micro Spectrophotometer</a></li>
+                                            <li class="cate_textt"><a href="Labcrown.com/operating-table">
+                                                    NIR Spectrophotometer</a></li>
+                                            <li class="cate_textt"><a
+                                                    href="Labcrown.com/surgical-and-examination-lights">
+                                                    Single Beam UV VIS Spectrophotometer</a></li>
+                                            <li class="cate_textt"><a href="Labcrown.com/operating-table">
+                                                    Visible Spectrophotometer</a></li>
+                                            <li class="cate_textt"><a
+                                                    href="Labcrown.com/surgical-and-examination-lights">
+                                                    X-ray Fluorescence Spectrometer</a></li>
+                                        </ul>
                                     </div>
-                                    <ul>
-                                        <li class="cate_textt"><a href="ClickLabs.com/autopsy-table"> Automatic
-                                                Sterilizer</a></li>
-                                        <li class="cate_textt"><a href="ClickLabs.com/dental-chair"> Portable
-                                                Sterilizer</a>
-                                        </li>
-                                    </ul>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="align_grid">
-                        <div class="row mb-0">
-                            <div class="col-lg-12">
-                                <p class="ourp_head"><a href="ultrasonic-cleaner.html">Ultrasonic Cleaner</a></p>
-                            </div>
-                            <div class="row py-3">
+                        <div class="align_grid">
+                            <div class="row mb-0">
                                 <div class="col-lg-12">
-                                    <div class="img_center_cate">
-                                        <a href="ClickLabs.com/or-solutions"><img src="images/p1.png" alt="OR Solutions"
-                                                class="img_cate"> </a>
+                                    <p class="ourp_head"><a href="sterilizer.html">Sterilizer</a></p>
+                                </div>
+                                <div class="row py-3">
+                                    <div class="col-lg-12">
+                                        <div class="img_center_cate">
+                                            <a href="Labcrown.com/or-solutions"><img src="images/p1.png"
+                                                    alt="OR Solutions" class="img_cate"> </a>
+                                        </div>
+                                        <ul>
+                                            <li class="cate_textt"><a href="Labcrown.com/autopsy-table"> Automatic
+                                                    Sterilizer</a></li>
+                                            <li class="cate_textt"><a href="Labcrown.com/dental-chair"> Portable
+                                                    Sterilizer</a>
+                                            </li>
+                                        </ul>
                                     </div>
-                                    <ul>
-                                        <li class="cate_textt"><a href="ClickLabs.com/autopsy-table"> Ultrasonic
-                                                Cleaner</a>
-                                        </li>
-                                    </ul>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="align_grid">
-                        <div class="row mb-0">
-                            <div class="col-lg-12">
-                                <p class="ourp_head"><a href="water-distillers.html">Water Distillers</a></p>
-                            </div>
-                            <div class="row py-3">
+                        <div class="align_grid">
+                            <div class="row mb-0">
                                 <div class="col-lg-12">
-                                    <div class="img_center_cate">
-                                        <a href="ClickLabs.com/or-solutions"><img src="images/p1.png" alt="OR Solutions"
-                                                class="img_cate"> </a>
+                                    <p class="ourp_head"><a href="ultrasonic-cleaner.html">Ultrasonic Cleaner</a></p>
+                                </div>
+                                <div class="row py-3">
+                                    <div class="col-lg-12">
+                                        <div class="img_center_cate">
+                                            <a href="Labcrown.com/or-solutions"><img src="images/p1.png"
+                                                    alt="OR Solutions" class="img_cate"> </a>
+                                        </div>
+                                        <ul>
+                                            <li class="cate_textt"><a href="Labcrown.com/autopsy-table"> Ultrasonic
+                                                    Cleaner</a>
+                                            </li>
+                                        </ul>
                                     </div>
-                                    <ul>
-                                        <li class="cate_textt"><a href="ClickLabs.com/autopsy-table"> Water Steam
-                                                Distiller</a></li>
-                                    </ul>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="align_grid">
-                        <div class="row mb-0">
-                            <div class="col-lg-12">
-                                <p class="ourp_head"><a href="weighing-balances.html">Weighing Balances</a></p>
-                            </div>
-                            <div class="row py-3">
+                        <div class="align_grid">
+                            <div class="row mb-0">
                                 <div class="col-lg-12">
-                                    <div class="img_center_cate">
-                                        <a href="ClickLabs.com/or-solutions"><img src="images/p1.png" alt="OR Solutions"
-                                                class="img_cate"> </a>
+                                    <p class="ourp_head"><a href="water-distillers.html">Water Distillers</a></p>
+                                </div>
+                                <div class="row py-3">
+                                    <div class="col-lg-12">
+                                        <div class="img_center_cate">
+                                            <a href="Labcrown.com/or-solutions"><img src="images/p1.png"
+                                                    alt="OR Solutions" class="img_cate"> </a>
+                                        </div>
+                                        <ul>
+                                            <li class="cate_textt"><a href="Labcrown.com/autopsy-table"> Water Steam
+                                                    Distiller</a></li>
+                                        </ul>
                                     </div>
-                                    <ul>
-                                        <li class="cate_textt"><a href="ClickLabs.com/autopsy-table"> Analytical
-                                                Balance</a>
-                                        </li>
-                                        <li class="cate_textt"><a href="ClickLabs.com/dental-chair"> Balance</a></li>
-                                    </ul>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                        <div class="align_grid">
+                            <div class="row mb-0">
+                                <div class="col-lg-12">
+                                    <p class="ourp_head"><a href="weighing-balances.html">Weighing Balances</a></p>
+                                </div>
+                                <div class="row py-3">
+                                    <div class="col-lg-12">
+                                        <div class="img_center_cate">
+                                            <a href="Labcrown.com/or-solutions"><img src="images/p1.png"
+                                                    alt="OR Solutions" class="img_cate"> </a>
+                                        </div>
+                                        <ul>
+                                            <li class="cate_textt"><a href="Labcrown.com/autopsy-table"> Analytical
+                                                    Balance</a>
+                                            </li>
+                                            <li class="cate_textt"><a href="Labcrown.com/dental-chair"> Balance</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
+                    </div>
                 </div>
             </div>
         </div>
@@ -641,12 +652,11 @@
                     <a class="btn btn-link" href="">Terms & Condition</a>
                     <a class="btn btn-link" href="">Support</a>
                     <a class="btn btn-link" href="account.html">My Accounts</a>
-
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-white mb-4">Our Office</h4>
-                    <p class="mb-2"><i class="bi bi-geo-alt"></i>ClickLabs Hitech City Hyderabad 500081</p>
-                    <p class="mb-2"><i class="bi bi-telephone"></i></i>123456789</p>
+                    <p class="mb-2"><i class="bi bi-geo-alt"></i>Labcrown Hitech City Hyderabad 500081</p>
+                    <p class="mb-2"><i class="bi bi-telephone"></i>123456789</p>
                     <p class="mb-2"><i class="bi bi-envelope"></i>info@example.com</p>
 
                 </div>
@@ -660,27 +670,23 @@
             </div>
         </div>
     </div>
-    </div>
     <!-- Footer End -->
-
 
     <!-- Copyright Start -->
     <div class="container-fluid copyright py-3">
         <div class="text-center">
             <img src="#" width="100" alt="">
-            Copyright &copy; 2024 &nbsp|&nbsp <a class="fw-medium text-light" href="#">www.ClickLabs.info</a>
-            &nbsp|&nbsp
+            Copyright &copy; 2024 &nbsp;|&nbsp; <a class="fw-medium text-light" href="#">www.Labcrown.info</a>
+            &nbsp;|&nbsp;
             All
-            Rights Reserved&nbsp .
+            Rights Reserved
         </div>
     </div>
     <!-- Copyright End -->
 
-
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-danger btn-lg-square rounded-circle back-to-top"><i
             class="bi bi-arrow-up"></i></a>
-
 
     <script src="js/main.js"></script>
     <!-- JavaScript Libraries -->
